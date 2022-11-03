@@ -20,10 +20,18 @@ namespace UserRegistration
                         Console.WriteLine("length should be Minimum three characters");
                         Console.WriteLine("Enter First name");
                         string fname = Console.ReadLine();
-                        FirstNumber Checkpattern = new FirstNumber();
+                        FirstName Checkpattern = new FirstName();
                         Checkpattern.Checkfirstname(fname);
                         break;
                     case 2:
+                        Console.WriteLine("*First letter should be capital.");
+                        Console.WriteLine("*length should be Minimum three characters.");
+                        Console.WriteLine("Enter Last name :");
+                        string lname = Console.ReadLine();
+                        lastname Lastname = new lastname();
+                        Lastname.Checklastname(lname);
+                        break;
+                    case 3:
                         flag = false;
                         break;
                     default:
