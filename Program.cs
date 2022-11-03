@@ -32,6 +32,12 @@ namespace UserRegistration
                         Lastname.Checklastname(lname);
                         break;
                     case 3:
+                        Console.WriteLine("Enter Email id :");
+                        string email = Console.ReadLine();
+                        email Email = new email();
+                        Email.Checkemail(email);
+                        break;
+                    case 4:
                         flag = false;
                         break;
                     default:
