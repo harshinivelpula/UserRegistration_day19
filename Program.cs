@@ -44,6 +44,12 @@ namespace UserRegistration
                         Mobile.Checkmobilenum(mobilenum);
                         break;
                     case 5:
+                        Console.WriteLine("Enter Passward :");
+                        string passward = Console.ReadLine();
+                        rule1 passwardruleone = new rule1();
+                        passwardruleone.Checkpassward(passward);
+                        break;
+                    case 6:
                         flag = false;
                         break;
                     default:
