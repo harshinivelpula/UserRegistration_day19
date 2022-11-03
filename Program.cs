@@ -38,6 +38,12 @@ namespace UserRegistration
                         Email.Checkemail(email);
                         break;
                     case 4:
+                        Console.WriteLine("Enter Mobile No. :");
+                        string mobilenum = Console.ReadLine();
+                        mobile Mobile = new mobile();
+                        Mobile.Checkmobilenum(mobilenum);
+                        break;
+                    case 5:
                         flag = false;
                         break;
                     default:
