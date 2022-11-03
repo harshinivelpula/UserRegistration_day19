@@ -45,11 +45,26 @@ namespace UserRegistration
                         break;
                     case 5:
                         Console.WriteLine("Enter Passward :");
-                        string passward = Console.ReadLine();
-                        rule1 passwardruleone = new rule1();
-                        passwardruleone.Checkpassward(passward);
+                        string password = Console.ReadLine();
+                        rule1 passwordruleone = new rule1();
+                        passwordruleone.Checkpassword(password);
                         break;
                     case 6:
+                        Console.WriteLine("Enter Passward :");
+                        string password = Console.ReadLine();
+                        string password1 = Console.ReadLine();
+                        rule2 passwordruletwo = new rule2();
+                        passwordruletwo.Checkpassword(password);
+                        break;
+                    case 7:
+                        Console.WriteLine("Enter Passward :");
+                        string passwordpattern = Console.ReadLine();
+                        string passwordpattern1 = Console.ReadLine();
+                        string passwordpattern2 = Console.ReadLine();
+                        rule3 passwordrulethree = new rule3();
+                        passwordrulethree.Checkpassword(password);
+                        break;
+                    case 8:
                         flag = false;
                         break;
                     default:
